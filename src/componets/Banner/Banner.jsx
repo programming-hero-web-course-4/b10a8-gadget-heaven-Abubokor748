@@ -1,6 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import BannerImg from "../../assets/banner.jpg";
 
 const Banner = () => {
+
+  const navigate = useNavigate();
+ 
   return (
     <div>
       {/* banner text starts */}
@@ -16,9 +20,9 @@ const Banner = () => {
               next level. From smart devices to the coolest accessories, we have
               it all!
             </p>
-            <button className="btn bg-white rounded-3xl text-[#9538E2]">
-              Shop Now
-            </button>
+              <button onClick={() => navigate('/category/All-product')} className="btn rounded-3xl text-[#9538E2] hover:text-black hover:bg-white bg-base-300">
+                Shop Now
+              </button>
           </div>
         </div>
       </div>
@@ -31,7 +35,7 @@ const Banner = () => {
         <img
           src={BannerImg}
           alt="404 Error"
-          className="relative transform -translate-y-20 left-[20%]  w-3/5 rounded-2xl shadow-2xl border p-3"
+          className="relative transform -translate-y-20 left-[20%] w-3/5 rounded-3xl shadow-2xl border p-3"
         />
       </div>
 

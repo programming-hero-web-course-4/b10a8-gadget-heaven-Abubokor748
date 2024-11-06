@@ -1,10 +1,17 @@
+import { Outlet, useLoaderData } from "react-router-dom";
+import DashboardBanner from "./DashboardBanner";
 
 const Dashboard = () => {
-    return (
-        <div>
-            <h2>This is the Dashboard page</h2>
-        </div>
-    );
+
+  const data = useLoaderData();
+  console.log(data);
+
+  return (
+    <div>
+      <DashboardBanner></DashboardBanner>
+      <Outlet></Outlet>
+    </div>
+  );
 };
 
 export default Dashboard;

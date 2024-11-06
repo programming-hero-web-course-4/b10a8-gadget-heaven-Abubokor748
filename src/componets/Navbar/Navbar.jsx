@@ -1,7 +1,6 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { FaCartPlus, FaRegHeart } from "react-icons/fa";
 
-
 const Navbar = () => {
   const navLinks = (
     <>
@@ -18,11 +17,14 @@ const Navbar = () => {
   );
 
   const location = useLocation();
-  const isHomePage = location.pathname === '/';
-  
+  const isHomePage = location.pathname === "/";
+
   return (
-    <div className={`mt-3 ${isHomePage ? 'bg-[#9538E2] text-white rounded-t-3xl' : 'bg-white'}`}>
-      
+    <div
+      className={`mt-3 ${
+        isHomePage ? "bg-[#9538E2] text-white rounded-t-3xl" : "bg-white"
+      }`}
+    >
       <div className="navbar pt-5">
         <div className="navbar-start">
           <div className="dropdown">
@@ -44,7 +46,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-[#ddbff5] rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               {navLinks}
             </ul>
@@ -55,21 +57,14 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end flex flex-row gap-3">
-          <a className="btn rounded-full">
+          <button className="btn rounded-3xl w-30 hover:bg-[#9538E2] hover:text-white text-[#9538E2] border-[#9538E2] bg-white">
             <FaCartPlus></FaCartPlus>
-          </a>
-          <a className="btn rounded-full">
+          </button>
+          <button className="btn rounded-3xl w-30 hover:bg-[#9538E2] hover:text-white text-[#9538E2] border-[#9538E2] bg-white">
             <FaRegHeart></FaRegHeart>
-          </a>
+          </button>
         </div>
       </div>
-      {/* navbar starts */}
-
-      {/* banner hero */}
-
-      
-
-      {/* banner hero */}
     </div>
   );
 };

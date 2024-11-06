@@ -1,8 +1,8 @@
 [
   {
     "product_id": "1",
-    "product_title": "Samsung Galaxy S23",
-    "product_image": "https://example.com/images/galaxy_s23.jpg",
+    "product_title": "Galaxy S23",
+    "product_image": "https://i.ibb.co.com/tCrj2B2/images.jpg",
     "category": "Phone",
     "price": 799.99,
     "description": "The Samsung Galaxy S23 with advanced features, including a powerful processor and high-resolution camera.",
@@ -18,11 +18,11 @@
   },
   {
     "product_id": "2",
-    "product_title": "Sony WH-1000XM5",
-    "product_image": "https://example.com/images/sony_wh1000xm5.jpg",
-    "category": "Accessories",
-    "price": 349.99,
-    "description": "Industry-leading noise-canceling headphones with superior sound quality and long battery life.",
+    "product_title": "Galaxy S24 Ultra",
+    "product_image": "https://i.ibb.co.com/j4ZywFK/samsung-galaxy-s24-ultra-JW-AP-cameras-close-IMG-20240115-145119.webp",
+    "category": "Phone",
+    "price": 1299.99,
+    "description": "The Samsung Galaxy S24 Ultra offers top-tier performance with a 200MP camera and vibrant 6.8-inch display.",
     "Specification": [
       "Active Noise Cancellation",
       "30 hours of battery life",
@@ -35,25 +35,25 @@
   },
   {
     "product_id": "3",
-    "product_title": "GoPro HERO10",
-    "product_image": "https://example.com/images/gopro_hero10.jpg",
-    "category": "Accessories",
-    "price": 399.99,
-    "description": "Capture stunning videos and photos with the GoPro HERO10's ultra-smooth 4K recording capabilities.",
+    "product_title": "Galaxy S24 Ultra",
+    "product_image": "https://i.ibb.co.com/j4ZywFK/samsung-galaxy-s24-ultra-JW-AP-cameras-close-IMG-20240115-145119.webp",
+    "category": "Phone",
+    "price": 1299.99,
+    "description": "The Samsung Galaxy S24 Ultra offers top-tier performance with a 200MP camera and vibrant 6.8-inch display.",
     "Specification": [
-      "4K video recording at 60fps",
-      "Waterproof up to 10m",
-      "HyperSmooth 4.0 stabilization",
-      "23MP photos",
-      "Wi-Fi connectivity"
+      "Active Noise Cancellation",
+      "30 hours of battery life",
+      "Bluetooth 5.0",
+      "Touch controls",
+      "Quick charge support"
     ],
     "availability": true,
-    "rating": 4.6
+    "rating": 4.7
   },
   {
     "product_id": "4",
     "product_title": "Fitbit Versa 3",
-    "product_image": "https://example.com/images/fitbit_versa_3.jpg",
+    "product_image": "https://i.ibb.co.com/yhzWJVD/download.jpg",
     "category": "Smart Watches",
     "price": 229.99,
     "description": "A feature-rich smartwatch with health tracking and built-in GPS for an active lifestyle.",
@@ -69,25 +69,25 @@
   },
   {
     "product_id": "5",
-    "product_title": "JBL Flip 6",
-    "product_image": "https://example.com/images/jbl_flip_6.jpg",
-    "category": "Accessories",
-    "price": 129.99,
-    "description": "Portable Bluetooth speaker with powerful sound and long battery life, perfect for outdoor use.",
+    "product_title": "Dell XPS 13",
+    "product_image": "https://i.ibb.co.com/xGp0ZMg/download.jpg",
+    "category": "Laptop",
+    "price": 1199.99,
+    "description": "High-performance Dell XPS 13 laptop with an InfinityEdge display, ideal for productivity and media consumption.",
     "Specification": [
-      "20W sound output",
-      "12-hour battery life",
-      "IP67 water and dustproof",
-      "Bluetooth 5.1",
-      "Lightweight design"
+      "13.4-inch FHD+ display",
+      "512GB SSD",
+      "Intel i7 11th Gen",
+      "16GB RAM",
+      "Backlit keyboard"
     ],
     "availability": true,
-    "rating": 4.4
+    "rating": 4.9
   },
   {
     "product_id": "6",
     "product_title": "Dell XPS 13",
-    "product_image": "https://example.com/images/dell_xps_13.jpg",
+    "product_image": "https://i.ibb.co.com/xGp0ZMg/download.jpg",
     "category": "Laptop",
     "price": 1199.99,
     "description": "High-performance Dell XPS 13 laptop with an InfinityEdge display, ideal for productivity and media consumption.",
@@ -103,9 +103,9 @@
   },
   {
     "product_id": "7",
-    "product_title": "Apple iPad Air (5th Gen)",
-    "product_image": "https://example.com/images/ipad_air_5.jpg",
-    "category": "Accessories",
+    "product_title": "Apple iPad Air 5th Gen",
+    "product_image": "https://i.ibb.co.com/zQtwHRz/images.jpg",
+    "category": "Macbook",
     "price": 599.99,
     "description": "A versatile tablet with a stunning display, powerful processor, and compatibility with the Apple Pencil.",
     "Specification": [
@@ -121,8 +121,8 @@
   {
     "product_id": "8",
     "product_title": "Apple MacBook Air M2",
-    "product_image": "https://example.com/images/macbook_air_m2.jpg",
-    "category": "Apple Laptop",
+    "product_image": "https://i.ibb.co.com/fSb4x7P/images.jpg",
+    "category": "Macbook",
     "price": 1199.99,
     "description": "The new MacBook Air with the M2 chip, offering incredible performance in an ultra-light design.",
     "Specification": [
@@ -138,8 +138,8 @@
   {
     "product_id": "9",
     "product_title": "Apple iPhone 14 Pro",
-    "product_image": "https://example.com/images/iphone_14_pro.jpg",
-    "category": "Apple Phone",
+    "product_image": "https://i.ibb.co.com/HHhSf3y/Apple-i-Phone-14-Pro-i-Phone-14-Pro-Max-hero-220907-Full-Bleed-Image-jpg-large.jpg",
+    "category": "Iphone",
     "price": 1099.99,
     "description": "Apple's latest iPhone 14 Pro with a powerful A16 Bionic chip and a new 48MP camera system.",
     "Specification": [
