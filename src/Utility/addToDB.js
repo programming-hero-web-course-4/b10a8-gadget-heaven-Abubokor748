@@ -16,7 +16,7 @@ const addToStoredCartList = (id) => {
     storedList.push(id);
     const storedListStr = JSON.stringify(storedList);
     localStorage.setItem("cart-list", storedListStr);
-    // toast("This book is added to your read list ");
+    toast("This book is added to your read list ");
   }
 };
 
@@ -39,7 +39,7 @@ const addToStoredWishList = (id) => {
         storedList.push(id);
         const storedListStr = JSON.stringify(storedList);
         localStorage.setItem("wish-list", storedListStr);
-        // toast("This book is added to your read list ");
+        toast("This book is added to your read list ");
     }
 };
 
