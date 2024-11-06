@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { FaCartPlus, FaRegHeart } from "react-icons/fa";
 
 const Navbar = () => {
@@ -15,6 +15,8 @@ const Navbar = () => {
       </li>
     </>
   );
+
+  const navigate = useNavigate();
 
   const location = useLocation();
   const isHomePage = location.pathname === "/";
@@ -56,11 +58,11 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
-        <div className="navbar-end flex flex-row gap-3">
+        <div onClick={() => navigate('/dashboard/cart')} className="navbar-end flex flex-row gap-3">
           <button className="btn rounded-3xl w-30 hover:bg-[#9538E2] hover:text-white text-[#9538E2] border-[#9538E2] bg-white">
             <FaCartPlus></FaCartPlus>
           </button>
-          <button className="btn rounded-3xl w-30 hover:bg-[#9538E2] hover:text-white text-[#9538E2] border-[#9538E2] bg-white">
+          <button onClick={() => navigate('/dashboard/wishlist')} className="btn rounded-3xl w-30 hover:bg-[#9538E2] hover:text-white text-[#9538E2] border-[#9538E2] bg-white">
             <FaRegHeart></FaRegHeart>
           </button>
         </div>

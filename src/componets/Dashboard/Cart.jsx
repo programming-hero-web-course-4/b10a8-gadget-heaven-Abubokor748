@@ -6,6 +6,8 @@ const Cart = () => {
   const data = useLoaderData();
 
   const [cartGadget, setCartGadget] = useState([]);
+  const [isDescending, setIsDescending] = useState([]);
+  const [isTotalCost, setTotalCost] = useState(0);
 
   useEffect(() => {
     const storedCartList = getStoredCartList();
@@ -18,7 +20,26 @@ const Cart = () => {
     );
 
     setCartGadget(cartGadgetList);
+
   }, [data]);
+
+
+  const handleSort = () => {
+    setIsDescending(!isDescending);
+
+    const sortedCartGadget = [...cartGadget];
+    sortedCartGadget.sort((a, b) => {
+      if(isDescending) {
+        return b.price - a.price;
+      }
+
+    });
+    setCartGadget(sortedCartGadget);
+
+    const newTotalCost = sortedCartGadget.reduce((number, product) => number + product.price, 0)
+
+  };
+
 
   return (
     <div>
@@ -30,7 +51,7 @@ const Cart = () => {
           <div className="flex flex-row justify-center md:justify-around my-3 gap-12">
             <h2 className="font-bold">Total Cost:</h2>
             <div className="flex gap-5">
-              <button className="btn rounded-3xl w-30 hover:bg-[#9538E2] hover:text-white text-[#9538E2] border-[#9538E2] bg-white">
+              <button onClick={handleSort} className="btn rounded-3xl w-30 hover:bg-[#9538E2] hover:text-white text-[#9538E2] border-[#9538E2] bg-white">
                 Sort By Price
               </button>
               <button className="btn rounded-3xl w-30 hover:bg-[#9538E2] hover:text-white text-[#9538E2] border-[#9538E2] bg-white">

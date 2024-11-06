@@ -27,7 +27,7 @@ const DashboardBanner = () => {
               className={`btn rounded-3xl w-[192px] items-center text-center md:px-5 bg-base-200 hover:bg-[#9538E2] px-6 border-[#9538E2] hover:text-white ${
                 isActive
                   ? "bg-base-200 text-black"
-                  : "bg-[#a13df3] text-white border-white"
+                  : "bg-[#a13df3] text-black border-white"
               }`}
             >
               Cart
@@ -45,7 +45,7 @@ const DashboardBanner = () => {
               className={`btn rounded-3xl w-[192px] items-center text-center md:px-5 bg-base-200 hover:bg-[#9538E2] px-6 border-[#9538E2] hover:text-white ${
                 isActive
                   ? "bg-base-200 text-black"
-                  : "bg-[#a13df3] text-white border-white"
+                  : "bg-[#a13df3] text-black border-white"
               }`}
             >
               Wishlist
